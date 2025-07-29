@@ -10,10 +10,10 @@ nltk.download('stopwords')
 stop_words = set(stopwords.words('english'))
 
 # Load model and vectorizer
-with open("D:/DBDA/Machine_Learning_Project/final_model_lr.pkl", 'rb') as f:
+with open("final_model_lr.pkl", 'rb') as f:
     model = joblib.load(f)
 
-with open("D:/DBDA/Machine_Learning_Project/tf_idf_vectorizer.pkl", 'rb') as f:
+with open("tf_idf_vectorizer.pkl", 'rb') as f:
     vectorizer = joblib.load(f)
 
 # TMDb API details
